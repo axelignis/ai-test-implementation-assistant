@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Environment
+.env
+.env.*
+
+# Generated output
+output/
+
+# Tool configuration (Claude Code)
+.claude/
+
+# macOS
+.DS_Store
+
+# IDE
+.idea/
+.vscode/
