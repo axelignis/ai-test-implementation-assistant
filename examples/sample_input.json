@@ -1,0 +1,54 @@
+{
+  "schema_version": "1.0",
+  "source_project": "ai-test-design-assistant",
+  "requirement_title": "User Authentication",
+  "test_design_output": {
+    "positive_scenarios": [
+      {
+        "id": "TC-POS-001",
+        "title": "Login succeeds with valid credentials",
+        "description": "A registered user can log in using a correct email and password combination.",
+        "preconditions": [
+          "A user account exists with known credentials",
+          "The user is on the login page"
+        ],
+        "steps": [
+          "Navigate to the login page",
+          "Enter a valid registered email address",
+          "Enter the correct password for that account",
+          "Click the login submit button"
+        ],
+        "expected_result": "The user is redirected to the dashboard and their name is displayed"
+      },
+      {
+        "id": "TC-POS-002",
+        "title": "User can log out successfully",
+        "description": "An authenticated user can terminate their session by logging out.",
+        "preconditions": [
+          "The user is logged in and on the dashboard"
+        ],
+        "steps": [
+          "Click the account menu or logout button",
+          "Confirm the logout action if prompted"
+        ],
+        "expected_result": "The user is redirected to the login page and the session is cleared"
+      },
+      {
+        "id": "TC-POS-003",
+        "title": "User session persists after page refresh",
+        "description": "An authenticated user remains logged in after refreshing the browser.",
+        "preconditions": [
+          "The user is logged in"
+        ],
+        "steps": [
+          "Reload the current page"
+        ],
+        "expected_result": "The user remains authenticated and the page loads correctly"
+      }
+    ],
+    "negative_scenarios": [],
+    "edge_cases": [],
+    "clarification_questions": [],
+    "risks": []
+  }
+}
